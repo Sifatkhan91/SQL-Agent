@@ -1,19 +1,25 @@
-User
+## Multi-Agent Workflow
+
+User Question
+↓
+Router Agent
+↓
+
+├── SQL Agent
+│      ↓
+│ PostgreSQL
 │
-▼
-Chainlit UI
+├── Analytics Agent
+│      ↓
+│ Business Insights
 │
-▼
-FastAPI Backend
-│
-▼
-LangGraph Router
-│
-├────────────► SQL Agent
-│                  │
-│                  ▼
-│            PostgreSQL
-│
-├────────────► Analytics Agent
-│
-└────────────► Memory Agent
+└── Memory Agent
+↓
+Conversation History
+
+Additional Components:
+
+• Self-Healing SQL Correction
+• SQL Safety Guard
+• FastAPI Backend
+• Chainlit Frontend
